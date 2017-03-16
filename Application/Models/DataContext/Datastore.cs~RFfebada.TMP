@@ -1,0 +1,116 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Application.Models;
+using System.Web.Script.Serialization;
+
+
+namespace Application.Models
+{
+    public class DataStore
+    {
+        ContactEntities db = new ContactEntities();
+        public List<AddressType> returnAddressType()
+        {
+            List<AddressType> addressTypeList = db.AddressTypes.ToList();
+            List<AddressType> returnAddressTypeList = new List<AddressType>();
+            AddressType addresstype1 = new AddressType();
+            foreach (var addresstype in addressTypeList)
+            {
+                addresstype1.AddressTypeId = addresstype.AddressTypeId;
+                addresstype1.Name = addresstype.Name;
+                returnAddressTypeList.Add(addresstype1);
+            }
+
+            return returnAddressTypeList;
+        }
+        public List<PhoneType> returnPhoneType()
+        {
+            List<PhoneType> phoneTypeList = db.PhoneTypes.ToList();
+            List<PhoneType> returnPhoneTypeList = new List<PhoneType>();
+            PhoneType phoneType1 = new PhoneType();
+            foreach (var phonetype in phoneTypeList)
+            {
+                phoneType1.PhoneTypeId = phonetype.PhoneTypeId;
+                phoneType1.Name = phonetype.Name;
+                returnPhoneTypeList.Add(phoneType1);
+            }
+
+            return returnPhoneTypeList;
+        }
+
+
+        public List<Profile> returnProfiles()
+        {
+            List<Profile> profileList = db.Profiles.ToList();
+            return profileList;
+        }
+
+        public ProfileDTO ReturnProfileById(int id)
+        {
+            ProfileDTO profileDTO = new ProfileDTO();
+            List<Profile> profileList = db.Profiles.ToList();
+
+
+            var query = from p in profileList where p.ProfileId == id select p;
+            foreach (var item in query)
+            {
+                profileDTO.FirstName = item.FirstName;
+                profileDTO.LastName = item.LastName;
+                profileDTO.Email = item.Email;
+                profileDTO.ProfileId = id;
+
+            }
+            profileDTO.AddressDTO = returnAddressById(id);
+            profileDTO.PhoneDTO = returnPhoneById(id);
+
+            return profileDTO;
+        }
+
+        public List<Address> returnAddressById(int id)
+        {
+            try
+            {
+
+                List<Address> addressList = new List<Address>();
+                Address address = new Address();
+                List<ProfileAddress> profileAddresses = db.ProfileAddresses.Where(p => p.ProfileId == id).ToList();
+                var Alladdress = db.Addresses.ToList();
+                foreach (var profileAddress in profileAddresses)
+                {
+                    address = db.Addresses.Single(p => p.AddressId == profileAddress.AddressId);
+                    addressList.Add(address);
+                }
+                return addressList;
+            }
+            catch
+            {
+                return null;
+            }
+
+        }
+        public List<Phone> returnPhoneById(int id)
+        {
+            try
+            {
+                List<Phone> PhoneList = new List<Phone>();
+                Phone phone = new Phone();
+                List<ProfilePhone> profilePhones = db.ProfilePhones.Where(p => p.ProfileId == id).ToList();
+                var AllPhone = db.Phones.ToList();
+                foreach (var profilePhone in profilePhones)
+                {
+                    phone = db.Phones.Single(p => p.PhoneId == profilePhone.PhoneId);
+                    PhoneList.Add(phone);
+                }
+                return PhoneList;
+
+            }
+            catch
+            {
+                return null;
+            }
+        }
+    }
+
+}

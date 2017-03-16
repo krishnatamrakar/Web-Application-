@@ -1,0 +1,49 @@
+﻿@{
+    Layout = "~/Views/Shared/_TestLogin.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login</title>
+    <script src="~/Content/ViewModel/LoginViewModel.js"></script>
+</head>
+<body>
+
+    <div class="panel-info" style="margin:auto 0px; width:680px; align-items:center; align-content:center;padding-left:380px ;padding-top:200px">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 class="form-signin-heading">Contact Manager</h4>
+            </div>
+            <div class="panel-body">
+                <form id="Login" class="form-signin">
+                    <label for="inputEmail" class="sr-only">User Name</label>
+                    <input type="text" id="txtUserName" data-bind="value:UserName" class="form-control" name="txtUserName" maxlength="10" placeholder="User Name" size="20" />
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="txtPassword" data-bind="value:Password" class="form-control" name="txtPassword" valueupdate:'afterkeydown'" maxlength="10" placeholder="Password" size="20" />
+                    <div class="checkbox">
+                        <label>
+                            <input id="login-remember" type="checkbox" data-bind="value:RememberMe" name="remember" value="1"> Remember me
+                        </label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button class="btn btn-lg btn-danger btn-block" type="reset">Cancel</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    @*--login---*@
+    @Html.Hidden("GetLoginPath", Url.Action("PostLogin", "Login"))
+    @Html.Hidden("GoToContactManager", Url.Action("Index", "Contact"))
+    <script src="~/Scripts/jquery.validate.js"></script>
+</body>
+</html>

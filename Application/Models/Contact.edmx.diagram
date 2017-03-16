@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cdbc320e6fb54c968efd043f7fd2720f" Name="Diagram1">
+        <EntityTypeShape EntityType="ContactModel.Address" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContactModel.AddressType" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContactModel.Phone" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContactModel.PhoneType" Width="1.5" PointX="3.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContactModel.Profile" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContactModel.ProfileAddress" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ContactModel.ProfilePhone" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="ContactModel.FK_ProfileAddress_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="ContactModel.FK_ProfileAddress_AddressType" ManuallyRouted="false" />
+        <AssociationConnector Association="ContactModel.FK_ProfilePhone_Phone" ManuallyRouted="false" />
+        <AssociationConnector Association="ContactModel.FK_ProfilePhone_PhoneType" ManuallyRouted="false" />
+        <AssociationConnector Association="ContactModel.FK_ProfileAddress_Profile" ManuallyRouted="false" />
+        <AssociationConnector Association="ContactModel.FK_ProfilePhone_Profile" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

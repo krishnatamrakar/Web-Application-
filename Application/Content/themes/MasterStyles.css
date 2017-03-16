@@ -1,0 +1,803 @@
+﻿/*Standards styles for MCAT
+    font-family: 'Century Gothic'
+    Macys Red color code : #CC0000
+    BLM purple color code : #492f92 
+*/
+
+body {
+}
+
+.NavBarText {
+    font-family: 'Century Gothic';
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link {
+    color: blue;
+    font-size: x-small;
+    text-decoration: none;
+}
+
+a.historyLink {
+    color: blue;
+    font-size: x-small;
+    font-family: 'Century Gothic';
+    float: right;
+    margin: 5px 12px;
+    text-decoration: underline;
+}
+
+a.splitTransactionLink {
+    color: blue;
+    font-size: x-small;
+    /*font-family: 'Century Gothic';*/
+    float: right;
+    margin: 5px 12px;
+    padding-right: 15px;
+}
+a.getMoreTransactionLink {
+    font-size: 14px;
+    text-decoration: underline !important;
+    margin-top:5px !important;
+}
+
+.k-grid-header th.k-header .k-link {
+    color: white !important;
+}
+
+.activeSideMenu {
+    font-family: 'Century Gothic';
+    background-color: #B20000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.box {
+    background-color: #D0D0D0;
+    border-style: outset;
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    transition: all 2s linear;
+    display: block;
+    border-style: groove;
+    border-color: #808080;
+    border-width: 15px;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+p {
+    background: black;
+    color: white;
+}
+
+.PhoneNumberTextbox {
+    height: 25px;
+    /*width: 130px;*/
+    font-size: 12px;
+    border-radius: 6px 5px 5px 5px;
+    -moz-border-radius: 6px 5px 5px 5px;
+    -webkit-border-radius: 6px 5px 5px 5px;
+    border: 1px solid #C0C0C0;
+}
+
+.DOBTextbox {
+    height: 25px;
+    width: 120px;
+    /* Modified by Bharadwaj A S on 12/08/2014 - changed the font size from 10px to 12 px*/
+    font-size: 12px;
+    text-align: left;
+    padding-left: 4px;
+    padding-top: 3px;
+    border-radius: 6px 5px 5px 5px;
+    -moz-border-radius: 6px 5px 5px 5px;
+    -webkit-border-radius: 6px 5px 5px 5px;
+    border: 1px solid #C0C0C0;
+}
+
+/*DOB without year*/
+.BLM_DOBTextbox {
+    height: 25px;
+    width: 85px;
+    text-align: center;
+    border-radius: 6px 5px 5px 5px;
+    -moz-border-radius: 6px 5px 5px 5px;
+    -webkit-border-radius: 6px 5px 5px 5px;
+    border: 1px solid #C0C0C0;
+}
+
+#accordion h3 a .ui-icon {
+    float: right;
+}
+
+.section {
+    display: none;
+}
+
+    .section:target {
+        display: block;
+    }
+
+
+
+/*Change css for side bar - active menu*/
+.nav-stacked > li.active > a,
+.nav-stacked > li.active > a:hover,
+.nav-stacked > li.active > a:focus {
+    color: white;
+    background-color: #989898;
+    font-weight: bold;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+}
+
+
+/*Change css for side bar - Inactive menu*/
+.nav-stacked > li > a {
+    color: black;
+    font-family: 'Century Gothic';
+    font-size: 20px;
+}
+
+/*Change arrow position of accordian icon to right*/
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    left: auto;
+    right: 0.5em;
+}
+
+
+.table-striped td {
+    border-right: solid 1px;
+    border-right-color: #B0B0B0;
+    border-bottom: solid 0px;
+    border-top-color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+.table-striped th {
+    text-align: center;
+}
+
+.textbox {
+    font-family: 'Century Gothic';
+    height: 25px;
+    font-size: 12px;
+    padding: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+.formLabel {
+    font-family: 'Century Gothic';
+    font-size: 12px;
+}
+
+.RewardLbl {
+    font-family: 'Century Gothic';
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Rewardtext {
+    font-family: 'Century Gothic';
+    font-size: 12px;
+    font-weight: 200;
+    min-height:18px;
+}
+
+.NoPadding {
+    padding: 0;
+}
+
+.MacysSubmitButton {
+    background-color: #CC0000;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    color: white;
+    height: 25px;
+    width: 80px;
+    border-radius: 6px 5px 5px 5px;
+    -moz-border-radius: 6px 5px 5px 5px;
+    -webkit-border-radius: 6px 5px 5px 5px;
+    border: 2px solid #CC0000;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.AddTransaction {
+ width:auto !important;
+}
+
+.BloomingdaleSubmitButton {
+    background-color: #492f92;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    color: white;
+    height: 25px;
+    width: 80px;
+    border-radius: 6px 5px 5px 5px;
+    -moz-border-radius: 6px 5px 5px 5px;
+    -webkit-border-radius: 6px 5px 5px 5px;
+    border: 2px solid #492f92;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.filterHeader {
+    background: #CC0000;
+    color: white;
+    height: 25px;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*.ui-accordion .ui-accordion-header .ui-icon { position: absolute; color:white; right : .5em; top: 50%; margin-top: -8px; }*/
+.DropDown {
+    height: 25px;
+    font-size: 12px;
+    padding: 2px;
+    font-family: 'Century Gothic' !important;
+}
+
+.SmallDropDown {
+    height: 20px;
+    font-size: 12px;
+    padding: 2px;
+    font-family: 'Century Gothic' !important;
+}
+
+.BLMfilterButton {
+    background-color: #492f92;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    color: white;
+    height: 25px;
+    width: 80px;
+    border-radius: 6px 5px 5px 5px;
+    -moz-border-radius: 6px 5px 5px 5px;
+    -webkit-border-radius: 6px 5px 5px 5px;
+    border: 2px solid #492f92;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.BLMHeader {
+    background: black;
+    color: white;
+    height: 25px;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.required {
+    color: red;
+}
+
+
+/*Change background color to white for accordion header icon*/
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    /*background-color:white;*/
+}
+
+
+/*Accordion Content font*/
+.ui-accordion .ui-accordion-content {
+    font-size: 11px;
+    font-family: 'Century Gothic';
+}
+
+/* Added by Bharadwaj A S on 12/08/2014 to make the accordion background none.*/
+.ui-widget-content {
+    background: none;
+}
+
+/*Accordion header font*/
+.ui-accordion .ui-accordion-header {
+    font-size: 16px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-top: 3px;
+    background: #CC0000;
+    color: white;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    height: 25px;
+    text-align: left;
+}
+
+.tooltip {
+    opacity: 1 !important;
+}
+
+.tooltip-inner {
+    width: 180px;
+    max-width: 250px;
+    background-color: white;
+    color: black;
+    border: solid 1px;
+}
+
+.top.tooltip .tooltip-arrow {
+    background-color: white;
+    color: black;
+}
+
+.right.tooltip .tooltip-arrow {
+    background-color: white;
+    color: black;
+}
+
+.has-error .form-control {
+    border: solid 2px;
+    border-color: red;
+}
+
+.ModalHeader {
+    background-color: black;
+    color: white;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+    font-weight: bold;
+}
+/*Code added to display Collapse icon in dark mode*/
+.ui-icon-plusthick {
+    /*background-color:#ffffff;*/
+}
+/*Code added to display Expand icon in dark mode*/
+.ui-icon-minusthick {
+    /*background-color:#ffffff;*/
+}
+/*Code added to display Pop up in top of the controls to others */
+.modal {
+    z-index: 2000;
+}
+
+.Bloomingdale-Selected-color {
+    /*background-color: #492f92 !important;*/
+    background-color: #000000 !important;
+}
+
+.Macys-Selected-color {
+    background-color: #CC0000 !important;
+}
+
+#Top-Menu .active {
+    background-color: #eee !important;
+    color: #2a6496 !important;
+}
+
+#Left-Side-Menu .active {
+    background-color: #989898 !important;
+    color: white !important;
+    vertical-align: middle !important;
+    font-weight: bold;
+}
+
+
+.nav-pills {
+    display: none;
+}
+
+.link-disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.link-enabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.has-error .form-control:focus {
+    border: solid 2px;
+    border-color: red;
+}
+
+.BlmSelected {
+    background-color: blue !important;
+}
+
+.col-left {
+    float: left;
+}
+
+.col-right {
+    float: right;
+}
+
+.message-block {
+    display: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px; /*Increased from 5px to 10px*/
+    border: 1px solid #000000;
+    text-align: center;
+    font-size: 11px;
+    font-family:'Century Gothic';
+}
+
+.Manitenacemessage-block {
+    display: none;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px; /*Increased from 5px to 10px*/
+    border: 1px solid #000000;
+    text-align: center;
+    font-size: 11px;
+    margin-top: 65px;
+    width: 120%;
+    font-family:'Century Gothic';
+}
+
+#grid-bloomingdales .k-header, .grid-bloomingdales table thead tr:first-child .k-header, .grid-bloomingdales-notes .k-header {
+    background-color: #492f92 !important;
+    
+}
+
+#grid-macys .k-header, .grid-macys table thead tr:first-child .k-header, .grid-macys-notes .k-header {
+    background-color: #000 !important;
+}
+ 
+#grid-macys .k-header, #grid-bloomingdales .k-header {
+    height: 50px;
+    background-image: none;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+
+.grid-macys table thead tr:first-child .k-header, .grid-bloomingdales table thead tr:first-child .k-header, .grid-macys-notes table thead tr:first-child .k-header,
+.grid-bloomingdales-notes table thead tr:first-child .k-header {
+    height: 26px;
+    background-image: none;
+    font-weight: bold;
+    color: #fff !important;
+}
+#MacysViewNotesGrid table tr td:nth-child(4),
+#BLMViewNotesGrid table tr td:nth-child(4)
+ {
+    overflow: visible !important; white-space: normal !important;
+    max-width: 90px !important;  
+    word-break: break-all !important;  
+    word-wrap: break-word !important;  
+}
+
+.k-widget.k-autocomplete.k-header.k-state-default {
+    width: 78%;
+}
+
+.grid-macys .k-button-icon, .grid-bloomingdales .k-button-icon {
+    display: none;
+}
+
+.k-tabstrip-items.k-reset {
+    text-align: left;
+}
+
+#grid-macys table tr td, #grid-bloomingdales table tr td,
+#grid-macys .k-header, #grid-bloomingdales .k-header,
+.grid-macys .k-grid-header th.k-header, .grid-macys table tr td, .grid-bloomingdales .k-grid-header th.k-header, .grid-bloomingdales table tr td {
+    font-family: "Century Gothic";
+    font-size: 12px;
+    text-align: center;
+}
+
+#grid-macys table tr th:nth-child(1), #grid-bloomingdales table tr th:nth-child(1) {
+    width: 10%;
+}
+
+#grid-macys table tr th:nth-child(2),
+#grid-bloomingdales table tr th:nth-child(2) {
+    width: 10%;
+}
+
+#grid-macys table tr th:nth-child(3), #grid-bloomingdales table tr th:nth-child(3) {
+    width: 15%;
+}
+
+#grid-macys table tr th:nth-child(4), #grid-bloomingdales table tr th:nth-child(4) {
+    width: 15%;
+}
+
+#grid-macys table tr th:nth-child(5), #grid-bloomingdales table tr th:nth-child(5) {
+    width: 25%;
+}
+
+#grid-macys table tr th:nth-child(6), #grid-bloomingdales table tr th:nth-child(6) {
+    width: 5%;
+}
+
+#grid-macys table tr th:nth-child(7), #grid-bloomingdales table tr th:nth-child(7) {
+    width: 10%;
+}
+
+#grid-macys table tr th:nth-child(8), #grid-bloomingdales table tr th:nth-child(8) {
+    width: 10%;
+}
+
+.k-tabstrip-items .k-link, .k-panelbar > li > .k-link {
+    color: #2e2e2e !important;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.5;
+    opacity: 0.85;
+    z-index: 1000;
+}
+
+    #loading span {
+        border-radius: 5px;
+        color: #808080;
+        font-size: 14px;
+        padding: 29px 40px 18px;
+        position: relative;
+        top: 50%;
+    }
+
+.loading-bar {
+    background-image: url("base/images/loading.gif");
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    padding-top: 40px;
+    text-align: center;
+    width: 91%;
+}
+/*Added by Bharadwaj A S To display the modal popup at the center of the screen. */
+.modal.fade .modal-dialog {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+}
+
+.NavBarText, .NavBarSide {
+    background-color: transparent;
+    border: medium none;
+    height: 40px;
+    width: 100%;
+    text-align: left;
+    line-height: 20px;
+}
+
+.nav-stacked > li > button {
+    color: black;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.nav-pills > li > button {
+    border-radius: 4px;
+}
+
+.NavBarText:hover, .NavBarSide:hover,
+.NavBarText:focus, .NavBarSide:focus {
+    background-color: #eee;
+}
+
+/*Added by Bharadwaj A S on 12/09/2014 */
+.Padding0pxWidth100Percent {
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+}
+
+.Width50Percent {
+    width: 50%;
+}
+
+.switch {
+    border: none;
+    background: left no-repeat;
+    width: 105px;
+    padding: 0;
+    margin: 0;
+}
+
+.on, .off {
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.switch label {
+    /*margin-bottom:0px*/
+    margin: 2px;
+}
+
+.on {
+    background-image: url('/Images/b.png');
+    opacity: 0.3;
+    height: 30px;
+    width: 35px;
+}
+
+.off {
+    background-image: url('/Images/MacysStar_white.png');
+    opacity: 0.3;
+    height: 30px;
+    width: 35px;
+}
+
+.navbar-toggle {
+    background-color: #ccc;
+    opacity: .5;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.icon-bar {
+    background-color: grey;
+}
+
+.row {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#tab_TFS img {
+    padding: 8px 0;
+}
+
+
+.divspace {
+    height: 130px;
+}
+
+.select-editable {
+    position: relative;
+}
+
+    .select-editable select {
+        position: absolute;
+    }
+
+    .select-editable input {
+        position: absolute;
+        width: 94%;
+        border-right: none;
+    }
+
+/* Grid - Selected row background color change */
+.k-grid table tr.k-state-selected {
+    background: #c5c5c5;
+    color: black;
+}
+
+/*Back to top link*/
+.BackToTopLinkCSS {
+    position: fixed;
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    visibility: hidden;
+    font-family: 'Century Gothic';
+    bottom: 0;
+    right: 5px; /*Moving 'BackToTop' button to right. DO NOT change this code. its a business requirenment.*/
+    text-align: right;
+    z-index: 1 !important;
+    height: 10px;
+}
+
+
+.SideNavHeight {
+    height: 480px;
+}
+
+.largeDropdown .col-md-5, .largeDropdown .col-md-7 {
+    padding: 0px;
+}
+
+.largeDropdown .col-md-5 {
+    width: 48%;
+}
+
+.largeDropdown .col-md-7 {
+    width: 52%;
+}
+
+.BlmPointsCss {
+    color: #492f92;
+}
+/*#PickaDayForm {
+    height:300px;
+}*/
+.pickaday {
+    background-color: #FEFEFE;
+}
+
+.k-calendar .k-header {
+    background-color: #492f92 !important;
+    color: #fff !important;
+    background-image: none;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1), 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.k-calendar.k-link k-nav-fast {
+    color: white !important;
+}
+
+.k-calendar .k-footer .k-nav-today {
+    color: #3F51B5 !important;
+    text-transform: uppercase;
+}
+
+#MacysProgramInfoQB_PropGrid table tr td:nth-child(1),
+#MacysProgramInfoQB_CobrandGrid table tr td:nth-child(1),
+#BLMProgramInfoQB_Grid table tr td:nth-child(1) {
+    font-weight: bolder;
+}
+
+#calendar .k-state-selected, #calendar .k-state-selected.k-state-focused,#calendar .k-state-selected.k-state-hover {
+    background-color: #492f92;
+    box-shadow: none;
+    color: white;
+}
+.k-calendar .k-link.k-nav-fast {
+    color: white;
+    font-weight: bold;
+}
+.k-calendar .k-header .k-icon {
+    background-image: url('../KendoUICSS/sprite.png') !important;
+}
+.embededCrossWrapper {
+position: absolute;
+top: 25px;
+z-index:0;
+}
+.embededCrossWrapperAddressLn2 {
+     position: absolute;
+     top: 39px;
+     z-index:0;
+}
+.embededCrossWrapperDomain {
+     position: absolute;
+     top: 5px;
+     z-index:1;
+}
+.newtest{
+    color:grey !important;
+}
+#calendar .k-content,
+                #calendar .k-state-hover,
+                #calendar .k-state-focused {
+                    background: transparent;
+                    border-color: transparent;
+                    color: #fff;
+                    box-shadow: none;
+}
+#calendar th {
+    color: black;
+}
+#calendar.k-calendar td {
+    padding:0px;
+    cursor: none;
+}
+
+                
